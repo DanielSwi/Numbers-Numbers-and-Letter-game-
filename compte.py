@@ -1,6 +1,5 @@
 import random 
 import time
-from tkinter import Y
 start_time = time.time()
 
 target = random.randint(100,999)
