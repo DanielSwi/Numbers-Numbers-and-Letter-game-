@@ -30,13 +30,13 @@ def multiply(num1, num2):
     return num1 * num2
 def realDivision(num1, num2):
     if num1> num2:
-        if isinstance(num1 / num2, int):
-            return num1 / num2
+        if (num1 / num2).is_integer():
+            return int(num1 / num2)
         else:
             return 0
     else:
-        if isinstance(num2/num1, int):
-            return num2/num1
+        if (num2/num1).is_integer():
+            return int(num2/num1)
         else:
             return 0
 def switch(op,num1,num2):
