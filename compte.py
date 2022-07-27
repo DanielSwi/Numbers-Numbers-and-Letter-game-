@@ -69,13 +69,13 @@ def test(lst,answer):
                     else:    
                         for op in operations:
                             new = switch(op,lst[ind1],lst[ind2])
-                            if new == 0:break
-                            temp = []
-                            temp.append(new)
-                            for index in range(len(lst)):
-                                if index != ind1 and index != ind2:
-                                    temp.append(lst[index])
-                            dic[answer + f'{lst[ind1]} {op} {lst[ind2]} = {new} |'] = temp
+                            if new != 0:
+                                temp = []
+                                temp.append(new)
+                                for index in range(len(lst)):
+                                    if index != ind1 and index != ind2:
+                                        temp.append(lst[index])
+                                dic[answer + f'{lst[ind1]} {op} {lst[ind2]} = {new} |'] = temp
             return dic
 
 def final_steps():
